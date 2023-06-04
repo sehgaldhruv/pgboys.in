@@ -26,8 +26,8 @@ module.exports.getAdmin = (req,res,next)=>{
 }
 
 module.exports.addListing =  (req,res,next)=>{
-    const {title, description,ownerName,ownerPhone} = req.body;
-    let newListing = new listings({title, description,ownerName,ownerPhone});
+    const {title, description,ownerName,ownerPhone,pictureURL} = req.body;
+    let newListing = new listings({title, description,ownerName,ownerPhone,pictureURL});
 
     newListing.save()
         .then(()=>{
