@@ -9,14 +9,14 @@ const listingsSchema = new Schema({
     pictureURL: String
 });
 
-const UserSchema = new Schema({
-    username: String,
-    password: String
-})
+// const UserSchema = new Schema({
+//     username: String,
+//     password: String
+// })
 
-const Users = mongoose.model('Users',UserSchema);
+// const Users = mongoose.model('Users',UserSchema);
 
-module.exports = Users;
+// module.exports = Users;
 
 module.exports = mongoose.model('listings',listingsSchema);
 
